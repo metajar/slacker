@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/nlopes/slack"
+	"github.com/slack-go/slack"
 	"github.com/shomali11/slacker"
 	"log"
 )

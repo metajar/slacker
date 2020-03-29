@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/nlopes/slack"
+	"github.com/slack-go/slack"
 	"github.com/shomali11/slacker"
 )
 

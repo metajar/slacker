@@ -3,7 +3,7 @@ package slacker
 import (
 	"fmt"
 
-	"github.com/nlopes/slack"
+	"github.com/slack-go/slack"
 )
 
 const (
@@ -43,7 +43,6 @@ func (r *response) Typing() {
 // Reply send a attachments to the current channel with a message
 func (r *response) Reply(message string, options ...ReplyOption) {
 	defaults := newReplyDefaults(options...)
-
 	r.rtm.PostMessage(
 		r.channel,
 		slack.MsgOptionText(message, false),

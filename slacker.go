@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nlopes/slack"
 	"github.com/shomali11/proper"
+	"github.com/slack-go/slack"
 )
 
 const (
@@ -28,7 +28,7 @@ const (
 )
 
 var (
-	unAuthorizedError = errors.New("You are not authorized to execute this command")
+	unAuthorizedError = errors.New("you are not authorized to execute this command")
 )
 
 // NewClient creates a new client using the Slack API
